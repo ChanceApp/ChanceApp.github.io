@@ -26,13 +26,6 @@ languages:
         weight: 2
         params:
             description: 演示说明
-    # ar:
-    #     languageName: عربي
-    #     languagedirection: rtl
-    #     title: موقع تجريبي
-    #     weight: 3
-    #     params:
-    #         description: وصف تجريبي
 
 services:
     # Change it to your Disqus shortname before using
@@ -40,7 +33,7 @@ services:
         shortname: "hugo-theme-stack"
     # GA Tracking ID
     googleAnalytics:
-        id:
+        id: 
 
 permalinks:
     post: /p/:slug/
@@ -62,8 +55,8 @@ params:
         lastUpdated: Jan 02, 2006 15:04 MST
 
     sidebar:
-        emoji: 🤡
-        subtitle: "Life is like a game of chess; make your move without regrets."
+        emoji: 
+        subtitle: 人身如棋，落子无悔 "
         avatar:
             enabled: true
             local: true
@@ -79,7 +72,7 @@ params:
 
     comments:
         enabled: true
-        provider: disqus
+        provider: twikoo
 
         disqusjs:
             shortname:
@@ -128,7 +121,7 @@ params:
                 placeholder:
 
         twikoo:
-            envId:
+            envId: https://twikoo-rose-xi.vercel.app/
             region:
             path:
             lang:
