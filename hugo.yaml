@@ -121,7 +121,7 @@ params:
                 placeholder:
 
         twikoo:
-            envId: https://twikoo-rose-xi.vercel.app/
+            envId: https://delightful-shortbread-1cadd5.netlify.app/.netlify/functions/twikoo
             region:
             path:
             lang:
