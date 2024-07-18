@@ -8,10 +8,10 @@ license:
 hidden: false
 comments: true
 draft: 
+tags:
+  - 编程
 categories:
-    - java
-tag:
-    -编程
+  - java
 ---
 ### Introduction to Java
 

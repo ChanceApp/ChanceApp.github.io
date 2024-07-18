@@ -8,8 +8,12 @@ license:
 hidden: false
 comments: true
 draft: 
+categories:
+    - java
+tags:
+    - 编程
 ---
-## Java转义字符
+## Java Escape Characters
 
 ```java
 // Demonstration of escape character usage

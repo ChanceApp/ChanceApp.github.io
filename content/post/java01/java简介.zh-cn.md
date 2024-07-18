@@ -8,10 +8,11 @@ license:
 hidden: false
 comments: true
 draft: 
-categories:
+tags : 
+    - 编程
+
+categories : 
     - java
-tag:
-    -编程
 ---
 ## java简介
 
