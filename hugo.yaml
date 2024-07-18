@@ -121,7 +121,7 @@ params:
                 placeholder:
 
         twikoo:
-            envId: https://delightful-shortbread-1cadd5.netlify.app/.netlify/functions/twikoo
+            envId: https://chance532-twikoo.hf.space/
             region:
             path:
             lang:
