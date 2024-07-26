@@ -11,71 +11,71 @@ draft: true
 tags : 
 categories : java
 ---
-### 相对路径
+### Relative Path
 
-从当前目录开始定位，形成的一个路径
+A path that starts from the current directory.
 
 ```
-../ 上一级目录
+../  Up one level in the directory
 ```
 
-### 绝对路径
+### Absolute Path
 
-从顶级目录开始定位，形成的路径
+A path that starts from the top-level directory.
 
 ```
 D:\abc2\text\hello.txt
 ```
 
-### dos命令
+### DOS Commands
 
-####  dir(directory)
-
-```
-dir				查看当前目录内容
-dir	D:\text     查看d盘text文件下内容
-```
-
-### cd(change directory)
+#### dir (directory)
 
 ```
-cd /D c: 切换根目录c盘 ， /D表示启动
+dir              View contents of the current directory
+dir D:\text      View contents of the text directory on the D drive
+```
+
+### cd (change directory)
+
+```
+cd /D c:         Switch to the root directory of the C drive, /D indicates start
 ```
 
 ### tree
 
 ```
-tree 			查看当前目录子文件子集内容
-tree D:\text	查看d盘text文件下的子集目录
+tree            View the contents of the subdirectories in the current directory
+tree D:\text    View the contents of the subdirectories in the text directory on the D drive
 ```
 
 ### cls
 
 ```
-清除当前显示内容
+Clear the current display content
 ```
 
 ### exit
 
 ```
-退出dos
+Exit DOS
 ```
 
-1. 编写一个hello,world程序[Homework01.java]
+1. Write a Hello, World program [Homework01.java]
 
    ```java
    public class Homework01{
-   	public static void main(String[]args){
+   	public static void main(String[] args){
            System.out.println("Hello world");
        }
    }
    ```
 
-2. 将个人的基本信息（姓名、性别、籍贯、住址）打印到控制台上输出。各条信息分别占一行。[Homework02.java]
+2. Print personal basic information (name, gender, place of origin, address) to the console, with each piece of information on a separate line. [Homework02.java]
 
    ```java
    public class Homework02{
-   	public static void main(String[]args){
+   	public static void main(String[] args){
            System.out.println("chance");
            System.out.println("woman");
            System.out.println("guangdong");
@@ -84,45 +84,42 @@ tree D:\text	查看d盘text文件下的子集目录
    }
    ```
 
-3. JDK , JRE , JVM的关系[ Homework03.java]
+3. The relationship between JDK, JRE, and JVM [Homework03.java]
 
    ```
-   JDK包含JRE +java开发工具
-   JRE包含JVM +核心类库
-   JDK是java开发工具包
-   JRE是运行环境
-   JVM是虚拟机
+   JDK includes JRE + Java development tools
+   JRE includes JVM + core libraries
+   JDK is the Java Development Kit
+   JRE is the Runtime Environment
+   JVM is the Virtual Machine
    ```
 
-4. 环境变量path配置及其作用[Homework04.java]
+4. Path configuration and its function [Homework04.java]
 
    ```
-   path主要是让dos系统能在任意目录直接找到我们的编译工具和运行工具。
-   没有其实也可以，相当于多了一个快捷方式。
-   首先要配置我们的JAVA_HOME也就是当前jDK版本，方便更改jdk版本
-   path配置%JAVA_HOME%bin
-   其实配置JDK下的bin目录工具，如java,javac,javadoc等
+   The path mainly allows the DOS system to directly find our compilation and running tools in any directory.
+   It's like a shortcut, not mandatory but convenient.
+   First, configure JAVA_HOME to point to the current JDK version for easy version changes.
+   The path configuration is %JAVA_HOME%\bin
+   This actually configures tools under the bin directory of the JDK, such as java, javac, javadoc, etc.
    ```
 
-5. java编写步骤[Homework05.java]
+5. Steps for writing Java code [Homework05.java]
 
    ```
-   1.编写Java的源代码
-   2.javac编译，得到对应的.class 字节码文件
-   3.java运行，本质就是把.class 加载到JVM 运行
+   1. Write the Java source code
+   2. Compile with javac to get the corresponding .class bytecode file
+   3. Run with java, essentially loading the .class file into the JVM to run
    ```
 
-6. java编写7个规范
+6. Seven Java coding standards
 
    ```
-   1.类方法的注释，使用Javadoc的方法，即文档注释
-   2.非javadoc注释，往往是对代码的一个说明（给程序维护者）
-   3.使用tab,整体代码右移，使用shift+tab 整体左移
-   4.运算符和 = 的两边，给空格，代码看上去清楚 int n = 1 + 4
-   5.源码文件使用utf—8编码
-   6.行宽的字符不要超过80
-   7.代码编程风格有两种，次行风格，行尾风格。 
+   1. Use Javadoc comments for class and method documentation
+   2. Non-Javadoc comments are often used to describe code (for maintainers)
+   3. Use Tab to indent code to the right, and Shift+Tab to indent to the left
+   4. Leave spaces around operators and = for clarity, e.g., int n = 1 + 4
+   5. Source files should use UTF-8 encoding
+   6. Line width should not exceed 80 characters
+   7. There are two coding styles: next-line style and end-of-line style.
    ```
-
-   
-
