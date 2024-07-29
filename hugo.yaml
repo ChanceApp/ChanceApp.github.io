@@ -1,7 +1,7 @@
 baseurl: https://chance-note.top
 languageCode: en-us
 theme: hugo-theme-stack
-paginate: 3
+paginate: 6
 title: Example Site
 copyright: Example Person
 
