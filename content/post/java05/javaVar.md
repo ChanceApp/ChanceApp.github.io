@@ -9,7 +9,7 @@ hidden: false
 comments: true
 draft: 
 tags : 
-categories : 
+categories : java
 ---
 ## 变量
 
@@ -119,25 +119,83 @@ if(Math.abs(num1-num2)<0.0001){
 
 字符类型(char)：
 
-表示单个字符，包含两个字节。只能用单引号，双引号是字符串类型。
+表示单个字符，包含两个字节。
 
 ```
-public class CharDetail{
+public class Var01{
 	public static void main(String[] args){
 		char c1 = 'a';
 		char c2 = '\at';
 		char c3 = '陈';
 		char c4 = 97;
-		//转换成数)
-		System.out.println((int)c3);
-		//打印输出
 		System.out.println(c1);
 		System.out.println(c2);
 		System.out.println(c3);
 		System.out.println(c4);//ctrl+ shift + d
-		//ctrl+ shift + k 删除行
+		//ctrl+ shift + k
 
 	}
 }
 ```
 
+布尔类型：boolean
+
+```
+public class Boolean01{
+	public static void main(String[] args){
+		boolean isPass = false;
+		if(isPass == true){
+			System.out.println("pass")
+		}else{
+			System.out.println("no pass")
+		}
+
+	}
+}
+```
+
+### 基本数据类型转换
+
+char->int->long->float->double
+
+byte->short->int->long->float->double
+
+
+
+AutoConvert.java
+
+```
+public class AutoConvert{
+	public static void main(String[] args){
+		int num = 'a';
+		double d1 =80;
+		System.out.println(num);
+		System.out.println(d1);
+
+	}
+}
+```
+
+1. 有多中类型的数据混合运算时，系统首先自动将所有数据转换成容量最大的那种数据类型，然后进行计算
+2. 当我们把精度大的数据类型赋值给精度小的数据类型是，就会报错。
+3. （byte,short)和char之间不会相互自动转换
+4. byte,short,char 他们三者可以计算，在计算时首先转换为int类型
+
+```
+public class AutoConvertDetail{
+	public static void main(String[] args){
+		int n1 = 10;
+		double d1 = n1 + 1.1;
+		float f1 = n1 + 1.1F;
+		
+		int n2 = 1.1;//错误的使用方式
+		//第四点
+		byte b2 = 1;
+		short s1 =1;
+		short s2 =b2 + s1;//错误是使用方式
+		
+	}
+}
+```
+
+i
